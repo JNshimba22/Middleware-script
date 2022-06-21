@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Description: Sonarqube Installation.....
+#Author: Joelle
+#Date:june 20th,2022
+
+# Install Java 11 
+
+yum update -y
+
+yum install java-11-openjdk-devel -y 
+
+yum install java-11-openjdk -y
+
+#Let’s navigate into the directory before downloading
+cd /opt  
+yum install wget -y
+
+#Download SonarQube latest versions on your serve
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.3.0.51899.zip
+
+#Install unzip
+unzip /opt/sonarqube-9.3.0.51899.zip
+unzip /opt/sonarqube-9.3.0.51899.zip
+
+# Change ownership
